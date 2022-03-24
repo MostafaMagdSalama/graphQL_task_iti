@@ -30,7 +30,7 @@ mutation deletePostById {
 }
 
 mutation updatePost {
-  updateById(id: "623b4da58facf12adca438b6", content: "what's mother fu....", token:"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjNiNDMxY2NlNjUyM2E3ZGEwOWFlMzEiLCJpYXQiOjE2NDgwNTExNzl9.STezLgE7EwuZk2cLAFXcOflBtHxi8G1G4QJpuzb614c") {
+  updateById(id: "623b4da58facf12adca438b6", content: "what's up dude", token:"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjNiNDMxY2NlNjUyM2E3ZGEwOWFlMzEiLCJpYXQiOjE2NDgwNTExNzl9.STezLgE7EwuZk2cLAFXcOflBtHxi8G1G4QJpuzb614c") {
     status
     error
   }
