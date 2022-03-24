@@ -1,0 +1,52 @@
+mutation createUser {
+  createUser(input: {username: "omnia123", age: 24, firstName: "omnia", lastName: "mahmoud", password: "owow"}) {
+    id
+  }
+}
+
+mutation createPost {
+  createPost(content: "new post content", token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjNiNDMxY2NlNjUyM2E3ZGEwOWFlMzEiLCJpYXQiOjE2NDgwNTExNzl9.STezLgE7EwuZk2cLAFXcOflBtHxi8G1G4QJpuzb614c") {
+    error
+    content
+    user {
+      id
+    }
+    id
+  }
+}
+
+mutation login {
+  loginUser(input: {username: "omnia123", password: "owow"}) {
+    error
+    token
+  }
+}
+
+mutation deletePostById {
+  deletePostById(id: "623bb0d29162933d06f34816", token:"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjNiYjBkMjkxNjI5MzNkMDZmMzQ4MTYiLCJpYXQiOjE2NDgwNzkxMDB9.Z-M8-4As5khJU-D98UzoD0N3c2W-lRzGR2SNsmsdTyM") {
+    status
+    error
+  }
+}
+
+mutation updatePost {
+  updateById(id: "623b4da58facf12adca438b6", content: "what's mother fu....", token:"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjNiNDMxY2NlNjUyM2E3ZGEwOWFlMzEiLCJpYXQiOjE2NDgwNTExNzl9.STezLgE7EwuZk2cLAFXcOflBtHxi8G1G4QJpuzb614c") {
+    status
+    error
+  }
+}
+
+query getPosts {
+  getAllPosts {
+    content,
+  }
+}
+
+mutation getPostBySpacificPerson{
+getUserPostsById(id:"623bb0d29162933d06f34816",
+  token:"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjNiYjBkMjkxNjI5MzNkMDZmMzQ4MTYiLCJpYXQiOjE2NDgwNzkxMDB9.Z-M8-4As5khJU-D98UzoD0N3c2W-lRzGR2SNsmsdTyM"){
+  content, 
+  
+}
+}
+
