@@ -1,5 +1,5 @@
 mutation createUser {
-  createUser(input: {username: "omnia123", age: 24, firstName: "omnia", lastName: "mahmoud", password: "owow"}) {
+  createUser(input: {username: "mostafa621", age: 24, firstName: "mostafa", lastName: "magdy", password: "owow"}) {
     id
   }
 }
@@ -16,7 +16,7 @@ mutation createPost {
 }
 
 mutation login {
-  loginUser(input: {username: "omnia123", password: "owow"}) {
+  loginUser(input: {username: "mostafa621", password: "mostafaMagdy"}) {
     error
     token
   }
